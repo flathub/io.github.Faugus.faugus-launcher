@@ -15,17 +15,23 @@ flatpak install flathub io.github.Faugus.faugus-launcher
 flatpak run io.github.Faugus.faugus-launcher
 ```
 
-## Steam integration
-Steam Flatpak needs permissions to run Faugus Launcher's shortcuts and to show the game's icon:
+## Steam Flatpak integration
+Allow Faugus Launcher to detect Steam users:
 ```
-sudo flatpak override com.valvesoftware.Steam --talk-name=org.freedesktop.Flatpak
-sudo flatpak override com.valvesoftware.Steam --filesystem=~/.var/app/io.github.Faugus.faugus-launcher/config/faugus-launcher/
+flatpak --user override com.valvesoftware.Steam --filesystem=~/.var/app/io.github.Faugus.faugus-launcher/config/faugus-launcher/
 ```
-
-## Known issues:
+Allow Steam to run Faugus Launcher's shortcuts:
+```
+flatpak --user override com.valvesoftware.Steam --talk-name=org.freedesktop.Flatpak
+```
+Allow Steam to see the game's icon:
+```
+flatpak --user override com.valvesoftware.Steam --filesystem=~/.var/app/io.github.Faugus.faugus-launcher/config/faugus-launcher/
+```
+### Known issues:
 - The button Stop won't close individual games/apps
 - Gamescope doesn't work
 - It may not use the system theme in some DEs. Workaround: give it access to GTK config files:
 ```
-flatpak override --user io.github.Faugus.faugus-launcher --filesystem=xdg-config/gtk-3.0:ro
+flatpak --user override io.github.Faugus.faugus-launcher --filesystem=xdg-config/gtk-3.0:ro
 ```
