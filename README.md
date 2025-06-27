@@ -31,7 +31,5 @@ flatpak --user override com.valvesoftware.Steam --filesystem=~/.var/app/io.githu
 ### Known issues:
 - The 'stop' button won't close games/apps
 - Gamescope doesn't work
-- It may not use the system theme in some DEs. Workaround: give it access to GTK config files:
-```
-flatpak --user override io.github.Faugus.faugus-launcher --filesystem=xdg-config/gtk-3.0:ro
-```
+- Ubisoft Connect doesn't work
+- It may not use the system theme in some DEs
