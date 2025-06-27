@@ -64,7 +64,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.7.3.tar.gz
-        sha256: ad68c15edb58b9d7a81ac78aa3f97b0e8e79f9a4de5ae8e2cdcb94162f9298c1
+        sha256: aac0733b14d3a3f8b3f477f266bf5c684a83be2466d3fdbba77e76269dbe8706
 
     modules:
       - name: umu-run
