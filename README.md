@@ -31,5 +31,4 @@ flatpak --user override com.valvesoftware.Steam --filesystem=~/.var/app/io.githu
 ### Known issues:
 - The 'stop' button won't close games/apps
 - Gamescope doesn't work
-- Ubisoft Connect doesn't work
 - It may not use the system theme in some DEs
