@@ -17,7 +17,8 @@ finish-args:
   - --socket=x11
   - --socket=pulseaudio # notification sound
   - --allow=devel # ubisoft connect and other launchers
-  - --allow=multiarch  # pressure-vessel
+  - --allow=multiarch
+  - --allow=per-app-dev-shm  # pressure-vessel
   - --device=all
   - --talk-name=org.kde.StatusNotifierWatcher # system tray
   - --env=PATH=/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin # mangohud, gamescope, obsvkcapture
@@ -64,8 +65,8 @@ modules:
         - -Dflatpak_build=true
     sources:
       - type: archive
-        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.7.8.tar.gz
-        sha256: 4eb613ddf0d6ed4d27249c44cd5df2f52cb772c32106eebb63bcb9b05f92f394
+        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.7.9.tar.gz
+        sha256: 3be22f4f89ee9943e041529abe02a8811c571e11d972d718f53b5fe17071f56a
 
     modules:
       - name: umu-run
@@ -75,7 +76,7 @@ modules:
         sources:
           - type: file
             url: https://github.com/Faugus/components/releases/download/v1.0.0/umu-run
-            sha256: 5d4f9aac8a94f214dca61b2abe948288af556d1875425b6f7b234265567823dc
+            sha256: 6542d4ef18f21633b9ad3019c5c43bb303a923f86507504777ce376d3620f897
       - name: imagemagick
         buildsystem: autotools
         config-opts:
