@@ -65,8 +65,8 @@ modules:
         - -Dflatpak_build=true
     sources:
       - type: archive
-        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.8.9.tar.gz
-        sha256: 147f3838148e35a3bb413541a63cd75f048f037a7dca36c73dd87609df5f6a64
+        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.8.10.tar.gz
+        sha256: 7776ec5cf4ec1a07d3f7d0dc7f71996d6a3ceac5cc2f54b353dc2a0ae98692f3
 
     modules:
       - name: umu-run
