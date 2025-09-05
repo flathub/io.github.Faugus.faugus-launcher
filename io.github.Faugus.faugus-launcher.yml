@@ -25,6 +25,7 @@ finish-args:
   - --filesystem=home
   - --filesystem=/mnt
   - --filesystem=/run/media
+  - --filesystem=xdg-config/MangoHud:ro
 
 inherit-extensions:
   - org.freedesktop.Platform.GL32
