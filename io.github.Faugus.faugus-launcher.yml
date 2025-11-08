@@ -1,14 +1,14 @@
 app-id: io.github.Faugus.faugus-launcher
-sdk: org.freedesktop.Sdk
-runtime: org.freedesktop.Platform
-runtime-version: &runtime-version '24.08'
+sdk: org.gnome.Sdk
+runtime: org.gnome.Platform
+runtime-version: &runtime-version '49'
 x-gl-version: &gl-version '1.4'
-x-gl-versions: &gl-versions 24.08;24.08extra;1.4
+x-gl-versions: &gl-versions 25.08;25.08extra;1.4
 x-gl-merge-dirs: &gl-merge-dirs vulkan/icd.d;glvnd/egl_vendor.d;egl/egl_external_platform.d;OpenCL/vendors;lib/dri;lib/d3d;lib/gbm;vulkan/explicit_layer.d;vulkan/implicit_layer.d
 command: faugus-launcher
 separate-locales: false # translations
 base: org.winehq.Wine
-base-version: stable-24.08
+base-version: stable-25.08
 
 finish-args:
   - --share=network
@@ -66,8 +66,8 @@ modules:
         - -Dflatpak_build=true
     sources:
       - type: archive
-        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.9.9.tar.gz
-        sha256: fa1e867273852bc2db64b11de8b38eb8c7c647bb3d1e31baf9defc989997e653
+        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.9.10.tar.gz
+        sha256: 894dc0926fed19cfaa25818cdf2fe2d2739f74938b8af59082e7397194669005
 
     modules:
       - name: imagemagick
@@ -82,7 +82,6 @@ modules:
             url: https://github.com/ImageMagick/ImageMagick.git
             tag: 7.1.1-39
 
-      - modules/python3-pygobject.json
       - modules/python3-Pillow.json
       - modules/python3-icoextract.json
       - modules/python3-requests.json
