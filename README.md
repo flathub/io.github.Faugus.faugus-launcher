@@ -9,12 +9,14 @@ A simple and lightweight app for running Windows games using [UMU-Launcher](http
 ```
 flatpak install flathub io.github.Faugus.faugus-launcher
 ```
-
-## Running
+## Running:
 ```
 flatpak run io.github.Faugus.faugus-launcher
 ```
-
+## MangoHud installation:
+```
+flatpak install org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/25.08
+```
 ## Steam Flatpak integration
 Allow Faugus Launcher to detect Steam users:
 ```
