@@ -1,4 +1,3 @@
-
 app-id: io.github.Faugus.faugus-launcher
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
