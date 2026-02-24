@@ -1,3 +1,4 @@
+
 app-id: io.github.Faugus.faugus-launcher
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
@@ -21,11 +22,13 @@ finish-args:
   - --allow=per-app-dev-shm  # pressure-vessel
   - --device=all
   - --talk-name=org.kde.StatusNotifierWatcher # system tray
+  - --talk-name=org.freedesktop.Flatpak # launch steam games
   - --env=PATH=/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin # mangohud, gamescope, obsvkcapture
   - --filesystem=home
   - --filesystem=/mnt
   - --filesystem=/run/media
   - --filesystem=xdg-config/MangoHud:ro
+  - --filesystem=home/.var/app/com.valvesoftware.Steam
 
 inherit-extensions:
   - org.freedesktop.Platform.GL32
@@ -73,8 +76,8 @@ modules:
         - -Dflatpak_build=true
     sources:
       - type: archive
-        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.14.4.tar.gz
-        sha256: 98ecefb29c1cd9ae939a9db5cd13bd3e5dcaa47aad17d476663453f8231bb64a
+        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.15.3.tar.gz
+        sha256: cc5c3c37753e650fcdef09cc7871aee5cfabcde3f724ff26da841815c70f9057
 
     modules:
       - name: imagemagick
@@ -94,7 +97,6 @@ modules:
       - modules/python3-requests.json
       - modules/python3-psutil.json
       - modules/python3-vdf.json
-      - modules/python3-filelock.json
 
   - shared-modules/libayatana-appindicator/libayatana-appindicator-gtk3.json
   - shared-modules/libcanberra/libcanberra.json
