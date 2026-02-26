@@ -74,7 +74,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.15.6.tar.gz
-        sha256: 98ecefb29c1cd9ae939a9db5cd13bd3e5dcaa47aad17d476663453f8231bb64a
+        sha256: ad5fcbb08a33758369fd98fd87407f1665e7b674e935e8677efd7cdab4ec1dc6
 
     modules:
       - name: imagemagick
