@@ -61,9 +61,9 @@ modules:
   - name: python3-dbus
     buildsystem: meson
     sources:
-      - type: git
-        url: https://gitlab.freedesktop.org/dbus/dbus-python.git
-        tag: dbus-python-1.4.0
+      - type: archive
+        url: https://gitlab.freedesktop.org/dbus/dbus-python/-/archive/dbus-python-1.4.0/dbus-python-dbus-python-1.4.0.tar.gz
+        sha256: da4ee9bbb9eb901d463a7cc9f99dfdbe6c751c8b48b29b78d378985a3c9656ad
 
   - name: faugus-launcher
     builddir: true
@@ -85,9 +85,9 @@ modules:
           - --disable-static
           - --disable-docs
         sources:
-          - type: git
-            url: https://github.com/ImageMagick/ImageMagick.git
-            tag: 7.1.1-39
+          - type: archive
+            url: https://github.com/ImageMagick/ImageMagick/archive/refs/tags/7.1.2-16.tar.gz
+            sha256: aadfa67a104d14a35339de0f2cc286c973a0f43329770c69e9667a22208750fb
 
       - modules/python3-Pillow.json
       - modules/python3-icoextract.json
