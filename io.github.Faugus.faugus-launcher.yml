@@ -73,8 +73,8 @@ modules:
         - -Dflatpak_build=true
     sources:
       - type: archive
-        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.16.3.tar.gz
-        sha256: 1951fe5178de39aba65363280f05ee2b91704c908c06efd223a098039b1cba0e
+        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.16.4.tar.gz
+        sha256: 85d41ce23e554b38f11fdf1bbd59a32211f9160df815f75ab52180b92a55ac09
 
     modules:
       - name: imagemagick
