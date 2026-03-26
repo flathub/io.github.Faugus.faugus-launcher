@@ -26,6 +26,7 @@ finish-args:
   - --filesystem=/mnt
   - --filesystem=/run/media
   - --filesystem=xdg-config/MangoHud:ro
+  - --filesystem=xdg-run/gamescope-0:rw
 
 inherit-extensions:
   - org.freedesktop.Platform.GL32
