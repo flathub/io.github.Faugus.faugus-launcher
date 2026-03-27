@@ -17,6 +17,7 @@ finish-args:
   - --socket=x11
   - --socket=pulseaudio # notification sound
   - --allow=devel # ubisoft connect and other launchers
+  - --allow=bluetooth
   - --allow=multiarch
   - --allow=per-app-dev-shm  # pressure-vessel
   - --device=all
