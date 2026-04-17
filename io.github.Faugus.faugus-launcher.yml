@@ -75,8 +75,8 @@ modules:
         - -Dflatpak_build=true
     sources:
       - type: archive
-        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.18.2.tar.gz
-        sha256: b5da1e255c10fbe34ea5d3beed09070616ebd5f10174a161585a918218736cc1
+        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.18.3.tar.gz
+        sha256: f737f88e3793d8bb190c33f5cd584c8af731d2d96ab8817453e0761ae0081d01
 
     modules:
       - name: imagemagick
@@ -97,6 +97,7 @@ modules:
       - modules/python3-psutil.json
       - modules/python3-vdf.json
       - modules/python3-filelock.json
+      - modules/python3-pygame.json
 
   - shared-modules/libayatana-appindicator/libayatana-appindicator-gtk3.json
   - shared-modules/libcanberra/libcanberra.json
