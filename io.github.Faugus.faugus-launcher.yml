@@ -76,7 +76,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/1.18.3.tar.gz
-        sha256: 962269f85be85ed2d4c541c780374f8ecbc21ebd13365916392e61e4ea4e9350
+        sha256: f737f88e3793d8bb190c33f5cd584c8af731d2d96ab8817453e0761ae0081d01
 
     modules:
       - name: imagemagick
@@ -97,7 +97,7 @@ modules:
       - modules/python3-psutil.json
       - modules/python3-vdf.json
       - modules/python3-filelock.json
+      - modules/python3-pygame.json
 
   - shared-modules/libayatana-appindicator/libayatana-appindicator-gtk3.json
   - shared-modules/libcanberra/libcanberra.json
-  - shared-modules/pygame/pygame-1.9.6.json
