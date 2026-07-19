@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/06/72/f18254001f25ba1533b191d8f1648f6f6374f2d5dcb14042be5998d07f4d/icoextract-0.1.5.tar.gz",
-            "sha256": "fd4c6758dc9136dc08e11c71f7b8b94328de32b52be52abe4df2d3994d315b27"
+            "url": "https://files.pythonhosted.org/packages/ae/ed/047f86acc1dc9b3b04f7ddc01be520b45e71fb4ec40d782f611125553814/icoextract-0.3.0.tar.gz",
+            "sha256": "8fb4584671662e61814a48e3f2fed30d083a1aede68947a0cb07ddb7f59238ec"
         },
         {
             "type": "file",
