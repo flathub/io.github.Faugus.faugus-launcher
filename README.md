@@ -30,7 +30,5 @@ sudo flatpak override com.valvesoftware.Steam --talk-name=org.freedesktop.Flatpa
 sudo flatpak override com.valvesoftware.Steam --filesystem=~/.var/app/io.github.Faugus.faugus-launcher/config/faugus-launcher/
 sudo flatpak override com.valvesoftware.Steam --filesystem=~/.config/faugus-launcher/
 ```
-### Known issues:
-- The 'stop' button won't close games/apps
+### Known issue:
 - Gamescope doesn't work
-- It may not use the system theme in some DEs
