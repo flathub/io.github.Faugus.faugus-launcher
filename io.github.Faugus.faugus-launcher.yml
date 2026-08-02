@@ -28,6 +28,7 @@ finish-args:
   - --filesystem=/mnt
   - --filesystem=/run/media
   - --filesystem=xdg-config/MangoHud:ro
+  - --filesystem=xdg-data/themes:ro
 
 inherit-extensions:
   - org.freedesktop.Platform.GL32
