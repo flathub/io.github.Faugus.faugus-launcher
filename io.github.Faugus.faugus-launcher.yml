@@ -22,6 +22,7 @@ finish-args:
   - --allow=per-app-dev-shm  # pressure-vessel
   - --device=all
   - --talk-name=org.kde.StatusNotifierWatcher # system tray
+  - --system-talk-name=org.freedesktop.UDisks2 # show mounted devices
   - --own-name=com.steampowered.* # run multiple games in the same prefix
   - --env=PATH=/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin # mangohud, gamescope, obsvkcapture
   - --filesystem=home
