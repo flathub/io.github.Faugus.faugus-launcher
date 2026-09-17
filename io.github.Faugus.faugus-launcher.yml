@@ -1,14 +1,14 @@
 app-id: io.github.Faugus.faugus-launcher
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
-runtime-version: &runtime-version '50'
+runtime-version: &runtime-version '51'
 x-gl-version: &gl-version '1.4'
-x-gl-versions: &gl-versions 25.08;25.08extra;1.4
+x-gl-versions: &gl-versions 26.08;26.08extra;1.4
 x-gl-merge-dirs: &gl-merge-dirs vulkan/icd.d;glvnd/egl_vendor.d;egl/egl_external_platform.d;OpenCL/vendors;lib/dri;lib/d3d;lib/gbm;vulkan/explicit_layer.d;vulkan/implicit_layer.d
 command: faugus-launcher
 separate-locales: false # translations
 base: org.winehq.Wine
-base-version: stable-25.08
+base-version: stable-26.08
 
 finish-args:
   - --share=network
