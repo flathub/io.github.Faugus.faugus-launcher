@@ -23,7 +23,6 @@ finish-args:
   - --allow=per-app-dev-shm  # pressure-vessel
   - --device=all
   - --talk-name=org.kde.StatusNotifierWatcher # system tray
-  - --talk-name=org.freedesktop.Notifications
   - --system-talk-name=org.freedesktop.UDisks2 # show mounted devices
   - --own-name=com.steampowered.* # run multiple games in the same prefix
   - --env=PATH=/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin # mangohud, gamescope, obsvkcapture
@@ -71,8 +70,8 @@ modules:
         - -Dflatpak_build=true
     sources:
       - type: archive
-        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/2.4.0.tar.gz
-        sha256: 81b40664128c35bc841ae89e95574fe50ff997f52db10298b2150f95cc9f3330
+        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/2.4.1.tar.gz
+        sha256: c3676baeaab8ff7f88b0272a206e17ea258a85f4369d7b06e16040a47cc5ec26
 
     modules:
       - modules/python3-dbus.json
