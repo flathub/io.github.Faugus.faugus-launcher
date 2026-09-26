@@ -1,14 +1,13 @@
 app-id: io.github.Faugus.faugus-launcher
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
-runtime-version: &runtime-version '50'
+runtime-version: &runtime-version '51'
+x-fd-version: &fd-version '26.08'
 x-gl-version: &gl-version '1.4'
-x-gl-versions: &gl-versions 25.08;25.08extra;1.4
+x-gl-versions: &gl-versions 26.08;26.08-extra;1.4
 x-gl-merge-dirs: &gl-merge-dirs vulkan/icd.d;glvnd/egl_vendor.d;egl/egl_external_platform.d;OpenCL/vendors;lib/dri;lib/d3d;lib/gbm;vulkan/explicit_layer.d;vulkan/implicit_layer.d
 command: faugus-launcher
 separate-locales: false # translations
-base: org.winehq.Wine
-base-version: stable-25.08
 
 finish-args:
   - --share=network
@@ -31,15 +30,28 @@ finish-args:
   - --filesystem=/run/media
   - --filesystem=xdg-config/MangoHud:ro
 
-inherit-extensions:
-  - org.freedesktop.Platform.GL32
-  - org.freedesktop.Platform.Compat.i386
-
 add-extensions:
+  org.freedesktop.Platform.Compat.i386:
+    directory: lib/i386-linux-gnu
+    version: *fd-version
+
+  org.freedesktop.Platform.GL32:
+    directory: lib/i386-linux-gnu/GL
+    version: *gl-version
+    versions: *gl-versions
+    subdirectories: true
+    no-autodownload: true
+    autodelete: false
+    add-ld-path: lib
+    merge-dirs: *gl-merge-dirs
+    download-if: active-gl-driver
+    enable-if: active-gl-driver
+    autoprune-unless: active-gl-driver
+
   org.freedesktop.Platform.VAAPI.Intel.i386:
     directory: lib/i386-linux-gnu/dri/intel-vaapi-driver
-    version: *runtime-version
-    versions: *runtime-version
+    version: *fd-version
+    versions: *fd-version
     autodelete: false
     no-autodownload: true
     add-ld-path: lib
@@ -59,7 +71,6 @@ modules:
       - type: inline
         dest-filename: ld.so.conf
         contents: |
-          /app/lib32
           /app/lib/i386-linux-gnu
 
   - name: faugus-launcher
