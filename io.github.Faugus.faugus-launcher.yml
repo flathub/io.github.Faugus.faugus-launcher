@@ -81,8 +81,8 @@ modules:
         - -Dflatpak_build=true
     sources:
       - type: archive
-        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/2.4.3.tar.gz
-        sha256: 91dd6d10c78d1a0171e1a8446c3ff27e497248fff4c82111c5d2c14bdd301d3d
+        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/2.4.4.tar.gz
+        sha256: 68194b24e98cddf4efc32fb7bbdb67a5aec84f53a25e8a04d36ce9851de54e9b
 
     modules:
       - modules/python3-dbus.json
