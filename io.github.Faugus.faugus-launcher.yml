@@ -25,6 +25,7 @@ finish-args:
   - --system-talk-name=org.freedesktop.UDisks2 # show mounted devices
   - --own-name=com.steampowered.* # run multiple games in the same prefix
   - --env=PATH=/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin # mangohud, gamescope, obsvkcapture
+  - --env=APPIMAGE_EXTRACT_AND_RUN=1
   - --filesystem=home
   - --filesystem=/mnt
   - --filesystem=/run/media
@@ -81,8 +82,8 @@ modules:
         - -Dflatpak_build=true
     sources:
       - type: archive
-        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/2.5.1.tar.gz
-        sha256: 0d0ae82febf6b3924b975f79f277887edc9364de67be89831514400cd94b6db6
+        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/2.5.3.tar.gz
+        sha256: aef101e3b2b15c67b709e0c7c73b82b7e1657772753b77d975e207116df8d1e4
 
     modules:
       - modules/python3-icoextract.json
