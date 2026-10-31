@@ -30,6 +30,7 @@ finish-args:
   - --filesystem=/mnt
   - --filesystem=/run/media
   - --filesystem=xdg-config/MangoHud:ro
+  - --filesystem=xdg-run/app/com.discordapp.Discord # discord rich presence
 
 add-extensions:
   org.freedesktop.Platform.Compat.i386:
