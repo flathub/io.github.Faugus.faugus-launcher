@@ -83,8 +83,8 @@ modules:
         - -Dflatpak_build=true
     sources:
       - type: archive
-        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/2.5.6.tar.gz
-        sha256: fab1a281d1aae671a0fe7a41059e1eb65f0588477e1cf2364bd89313b5022c88
+        url: https://github.com/Faugus/faugus-launcher/archive/refs/tags/2.5.7.tar.gz
+        sha256: 7fda460d6756102d2ce3fd54ad527174d437464449c30c732e0242120769a569
 
     modules:
       - modules/python3-icoextract.json
